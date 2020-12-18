@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    
+    DICAS:
+https://wordpad.cc/ProfRicardoBontempo
+
+-->
+
+<head>
+    <meta charset="UTF-8"> <!-- conversor de caracteres especiais para o browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ajuste no monitor/tablet/mobile -->
+    <title>Gama Academy - Contato By REDUARD</title>
+
+    <!-- .css e .js -->
+    <!-- fazendo a chamada de uma biblioteca de CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <table border=0 widht="100%" cellpadding="2" class="menu">
+        <tr>
+            <td>
+                <a href="..\html\index.html">
+                    <img src="..\imagens\logo.png"  width="250" height="100">
+                </a>
+            </td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">CURSOS ONLINE</td>
+            <td align="right">GAMA EXPERIENCE</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+        </tr>
+    </table>
+
+        <br>
+        <form id="formulario_contato" method="POST">
+            <!-- POST : encapsula (extranet) / GET : expõe na URL (intranet) -->
+            <fieldset>
+                <legend><b>Para fazer nossos cursos, preencha o formulário abaixo: </b></legend>
+            <label>Nome: </label><input type="text" name="nome" class="campo_nome" required><br><br>
+            <label>E-mail: </label><input type="email" name="email" class="campo_email" required> <br><br>
+            <label>Telefone: </label><input type="tel" name="telefone">  <!-- validação e máscara  = js -->
+            <label>Senha: </label><input type="password" name="senha" class="campo_senha" required><br><br>
+            <label>Gênero: </label>
+            <input type="radio" name="opcao" value="Feminio">Feminino
+            <input type="radio" name="opcao" value="Masculino">Masculino
+            <br><br>
+            <label>Data: </label><input type="date" name="data" class="campo_data" required><br><br>
+
+            <label>Escolha o curso: </label>
+                <select autofocus  class="campo_escolha">
+                    <option value="CSS">CSS</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Java">Java</option>
+                </select><br><br>
+
+            <label>Escolha o período: </label>
+                <input type="checkbox"  name="OPCAO" value="manhã"> Manhã
+                <input type="checkbox"  name="OPCAO" value="tarde"> Tarde
+                <input type="checkbox"  name="OPCAO" value="noite"> Noite<br><br>
+            <br><br>
+
+            <label>Mensagem: </label><br>
+                <textarea cols="35" rows="4" name="mensagem" class="campo_msg"></textarea><br><br> <!--até 1.000 caracteres -->
+
+            <label>Anexar Comprovante: </label><br>
+                <input type="file" name="arquivo">
+
+
+            <br><br>
+
+            <input type="submit" name="enviar" value="Enviar">
+
+        </fieldset>
+        </form>
+
+</body>
+
+</html>

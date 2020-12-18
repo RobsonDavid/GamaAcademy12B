@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Page by REDUARD</title>
+
+    <script>
+        /*
+        var emp = " Gama Academy";
+        var msg = "Sejam Bem-vindos! - ";
+    
+        alert(msg + emp);
+    */
+
+        //alert("Welcome to Java Page!! ;-) ");
+
+        //prompt("Seja bem-vindo! Digite seu nome: ", "Nome Completo");
+
+        //var name = prompt("Seja bem-vindo! Digite seu nome: ", "Nome Completo");
+        //alert("Oi " + nome + "tudo bem ?") ;
+
+/*         function ola(){
+            alert("Oi " + nome + "tudo bem ?") ;
+        } */
+
+        function validar() {
+
+            var n = formuser.nome.value;
+            if (n == "") {
+                alert("Campo Nome é obrigatório.");
+                formuser.nome.focus();
+                return false;
+            }
+
+            var e = formuser.email.value;
+            if (e == "") {
+                alert("Campo E-mail é obrigatório.");
+                formuser.email.focus();
+                return false;
+            }
+            if (e.indexOf('@') == -1) {
+                alert("Digite corretamento o E-mail.");
+                formuser.email.focus();
+                return false;
+            }
+            /*             if (e == "" || e.indexOf('@') == -1) {
+                            alert("O preenchimento do campo email é obrigatório");
+                            formuser.email.focus();
+                            return false;
+                        }
+             */
+            alert("Prezado(a) " + n + ", enviaremos o nosso portifólio do curso da Gama Academy para o seu email " + e);
+        }
+    </script>
+</head>
+
+<body>
+
+    <form id="formuser" method="POST">
+        Nome: <input type="text" name="nome"><br><br>
+        E-mail: <input type="text" name="email"><br><br>
+        <input type="button" onclick="return validar()" value="Processar">
+
+
+    </form>
+    <!-- <input type="button" onclick="ola()" value="olá"); -->
+
+</body>
+
+</html>

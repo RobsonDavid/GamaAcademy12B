@@ -1,0 +1,97 @@
+            <style>
+            /*
+            .container{
+                border: 3px solid brown;
+                width: 500px;
+            }
+            .div1{
+                background-color: yellow;
+            }
+            .div2{
+                background-color: blue;
+            }
+            .div3{
+                background-color: green
+            }
+            .div4{
+                background-color: red;
+            }
+*/
+
+    
+                p {
+                    color: rgb(37, 56, 37);
+                    font: 14px;
+                    font-family:  Helvetica;
+                }
+                body{
+                    background-color: rgb(124, 156, 245);
+                }
+                label{
+                    color: blue;
+                    font-size: 14px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif
+                    font-weight: lighter;
+                }
+                .menu {
+                    color:rgb(2, 46, 2);
+                    font-size: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+                .lista {
+                    color: rgb(58, 148, 58);
+                    font-size: medium;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+                legend{
+                    color: rgb(2, 44, 2);
+                    font-size: 14px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif
+                    font-weight: lighter;
+            }
+
+            .campo_nome {
+                position: absolute;
+                left: 75px;
+                width: 260px;
+            }
+            .campo_email {
+                position: absolute;
+                left: 75px;
+                width: 280px;
+                background-color: bisque;
+            }
+
+            .campo_senha {
+                width: 50px;
+            }
+
+            .campo_msg {
+                background-color: rgb(156, 87, 3);
+                color: yellowgreen;
+            }
+
+            .campo_data {
+                background-color: grey;
+                color: yellow;
+            }
+
+            .campo_escolha {
+                background-color: grey;
+                color: yellow;
+                width: 150px;
+            }
+            /*
+            faz referencia para estilo somente no formulario
+            */
+            #formulario_contato{
+                    background-color: rgb(132, 192, 172);
+                    color: blue;
+                    font-size: 14px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif
+                    font-weight: lighter;
+            }
+
+            </style>

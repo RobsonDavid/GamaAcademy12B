@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    
+    DICAS:
+https://wordpad.cc/ProfRicardoBontempo
+
+-->
+
+<head>
+    <meta charset="UTF-8"> <!-- conversor de caracteres especiais para o browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ajuste no monitor/tablet/mobile -->
+    <title>Gama Academy - Contato By REDUARD</title>
+
+    <!-- .css e .js -->
+</head>
+
+<body>
+
+    <table border=0 widht="100%" cellpadding="2">
+        <tr>
+            <td>
+                <a href="..\html\index.html">
+                    <img src="..\imagens\logo.png">
+                </a>
+            </td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">CURSOS ONLINE</td>
+            <td align="right">GAMA EXPERIENCE</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+        </tr>
+    </table>
+
+        <br>
+        <form id="formulario_contato" method="POST">
+            <!-- POST : encapsula (extranet) / GET : expõe na URL (intranet) -->
+            <fieldset>
+                <legend><b>Para fazer nossos cursos, preencha o formulário abaixo: </b></legend>
+            <label>Nome: </label><input type="text" name="nome" required>
+            <label>E-mail: </label><input type="email" name="email" required>
+            <label>Telefone: </label><input type="tel" name="telefone">  <!-- validação e máscara  = js -->
+            <label>Senha: </label><input type="password" name="senha" required><br><br>
+            <label>Gênero: </label>
+            <input type="radio" name="opcao" value="Feminio">Feminino
+            <input type="radio" name="opcao" value="Masculino">Masculino
+            <br><br>
+            <label>Data: </label><input type="date" name="data" required><br><br>
+
+            <label>Escolha o curso: </label>
+                <select autofocus>
+                    <option value="CSS">CSS</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Java">Java</option>
+                </select><br><br>
+
+            <label>Escolha o período: </label>
+                <input type="checkbox"  name="OPCAO" value="manhã"> Manhã
+                <input type="checkbox"  name="OPCAO" value="tarde"> Tarde
+                <input type="checkbox"  name="OPCAO" value="noite"> Noite<br><br>
+            <br><br>
+
+            <label>Mensagem: </label><br>
+                <textarea cols="35" rows="4" name="mensagem" ></textarea><br><br> <!--até 1.000 caracteres -->
+
+            <label>Anexar Comprovante: </label><br>
+                <input type="file" name="arquivo">
+                
+            
+           <!--  
+            <label>Hora: </label><input type="time" name="hora"><br><br>
+            <label>Mês: </label><input type="month" name="mes"><br><br>
+            <label>Semana: </label><input type="week" name="semana"><br><br>
+            <label>Numero: </label><input type="number" name="numeroa" min="0" max="100"><br><br>
+            <label>Texto 20 caracter: </label><input type="text" name="texto20" maxlength="20"><br><br>
+            -->
+
+            <br><br>
+
+            <input type="submit" name="enviar" value="Enviar">
+
+        </fieldset>
+        </form>
+
+</body>
+
+</html>

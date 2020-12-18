@@ -1,0 +1,156 @@
+1) acessar
+https://github.com/Didox/valida-cpf-itau-turma-12b
+
+2) Fork (copiar para meu usuário)
+
+3) Clone (download para máquina local)
+https://github.com/RobsonDavid/valida-cpf-itau-turma-12b.git
+
+
+4) Criar Pasta
+entrar Pasta
+aula11\valida-cpf-itau-turma-12b
+(clone = download para máquina local)
+git clone https://github.com/RobsonDavid/valida-cpf-itau-turma-12b.git
+
+5) code .
+Visual Studio Code
+
+6) npm install
+
+7) git init   
+8) git add .  
+9) git commit -am "subindo versao"
+
+
+-- *** não precisou ***
+|10) GitHub
+|New Repository
+|
+|11) Push (subir versão)
+|git remote add origin https://github.com/RobsonDavid/valida-cpf-itau-turma-12b.git
+|git branch -M main
+|
+|git push -u origin main
+-- *** não precisou ***
+
+12) Alterei...
+ git add .  
+ git commit -am "subindo versao"
+ git push -u origin main
+
+13) npm run tdd
+
+14> npm start
+http://localhost:3000/
+
+15) testar no Browse
+
+16) npm run bdd
+
+
+=======
+Jenkins = http://localhost:8080
+=======
+Novo Job
+BDD
+Construir ... free-style
+[OK]
+
+Build
+Executar Comando Windows
+cd C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b
+npm run bdd
+
+Ação pós Build
+Construir outros projetos BDD
+xxx
+
+
+>>>>>><<<<<<<
+
+Build
+cd C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b
+git pull --force 
+.... última versão da minha máquina é o que está no Git!!! sempre versionar o fonte!!!!
+.... clone já amarrou code .git/config
+Ação pós Build
+Construir outros projetos TDD
+
+TDD
+cd C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b
+npm run tdd
+Ação pós Build
+Construir outros projetos BDD
+
+BDD
+cd C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b
+START /B npm start 2>&1
+
+cd C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b
+npm run bdd
+Ação pós Build
+Construir outros projetos DEV
+
+DEV
+cd "C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b"
+heroku git:remote -a dev-validador-12b-robson
+
+cd "C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b"
+git push heroku main
+Ação pós Build
+Construir outros projetos HOM
+
+HOM
+cd "C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b"
+heroku git:remote -a hom-validador-12b-robson
+
+cd "C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b"
+git push heroku main
+Ação pós Build
+Construir outros projetos PROD
+
+
+PROD
+cd "C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b"
+heroku git:remote -a prod-validador-12b-robson
+
+cd "C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula11\valida-cpf-itau-turma-12b"
+git push heroku main
+
+
+
+
+))))))
+http://localhost:3000/
+https://dev-validador-12b-robson.herokuapp.com/ 
+https://hom-validador-12b-robson.herokuapp.com/ 
+https://prod-validador-12b-robson.herokuapp.com/ 
+((((((
+Instalar Plugin
+ Dashboard
+  Gerenciar Jenkins
+    Gerenciar plug
+        Disponíveis
+		Build Pipeline
+
++ 
+PipelineItaú
+... pipeline view
+
+
+:>:>:> criar projeto no Heroku
+Escolhe projeto
+Setting
+[Delete App...]
+java-turma-12b-robsondavid3
+
+New
+Create new app
+[create app]
+
+
+
+
+
+

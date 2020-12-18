@@ -1,0 +1,17 @@
+Error trying to find JVM: Error: ENOENT: no such file or directory, 
+
+lstat 'C:\Program Files\Java\jre1.8.0_251'
+
+
+Outra versão...
+variáveis de ambiente Windows...
+
+Projeto
+versão JDK para fazer compilação
+POM.XML
+
+
+Porta 8080
+finalizar Jenkins
+Aplication Properties
+TomCat

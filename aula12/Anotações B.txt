@@ -1,0 +1,754 @@
+Criando uma biblioteca em JavaScript
+OBS:funcao.js
+==============================
+
+/* var empresa=" Gama Academy";
+var mensagem="Sejam bem vindos - ";
+alert(mensagem+empresa);*/
+
+// alert("Sejam bem vindos a nossa página de JavaScript");
+
+/*var nome=prompt("Seja bem vindo, por favor ditgite o seu nome","Insira o seu nome completo");
+alert("Bem vindo "+nome+" a escola Gama Academy");*/
+
+function mensagem(){
+    alert("Você ganhou duas horas gratuítas do curso de CSS");
+
+}
+
+function validar(){
+    var nome=formuser.nome.value;
+    var email=formuser.email.value;
+
+    if(nome==""){
+        alert("O preenchimento do campo nome é obrigatório");
+        formuser.nome.focus();
+        return false;
+    }
+    
+    if(email=="" || email.indexOf('@')==-1){
+        alert("O preenchimento do campo email é obrigatório");
+        formuser.email.focus();
+        return false; 
+    }
+
+    alert("Preado(a) "+ nome+ " estaremos lhe enviando o nosso portifólio do curso da Gama Academy para o seu email "+email);
+
+}
+
+===================================
+
+Criando uma chamada da biblioteca em JavaScript
+====================================
+    <script type="text/javascript" src="../js/funcao.js"></script>
+
+
+Criando uma página com JavaScript
+=============================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+
+
+    <script>
+        /* var empresa=" Gama Academy";
+        var mensagem="Sejam bem vindos - ";
+        alert(mensagem+empresa);*/
+        
+        // alert("Sejam bem vindos a nossa página de JavaScript");
+
+        /*var nome=prompt("Seja bem vindo, por favor ditgite o seu nome","Insira o seu nome completo");
+        alert("Bem vindo "+nome+" a escola Gama Academy");*/
+
+        function mensagem(){
+            alert("Você ganhou duas horas gratuítas do curso de CSS");
+
+        }
+
+        function validar(){
+            var nome=formuser.nome.value;
+            var email=formuser.email.value;
+
+            if(nome==""){
+                alert("O preenchimento do campo nome é obrigatório");
+                formuser.nome.focus();
+                return false;
+            }
+            
+            if(email=="" || email.indexOf('@')==-1){
+                alert("O preenchimento do campo email é obrigatório");
+                formuser.email.focus();
+                return false; 
+            }
+        
+            alert("Preado(a) "+ nome+ " estaremos lhe enviando o nosso portifólio do curso da Gama Academy para o seu email "+email);
+        
+        }
+
+    </script>
+
+</head>
+<body>
+    <form id="formuser" method="POST">
+        Nome:<input type="text" name="nome"><br><br>
+        Email:<input type="text" name="email"><br><br>
+        <input type="submit" onclick="return validar()" value="Enviar">
+
+    </form>
+
+
+
+   <!-- <input type="button" onclick="mensagem()"  value="Click aqui para obter o seu prêmio">-->
+</body>
+</html>
+================
+
+
+Formulário 100% - BootStrap
+========================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- chamada da biblioteca do bootstrap - css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- chamada da biblioteca do bootstrap - js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="../imagens/logo.png" width="200" height="100"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">QUEM SOMOS <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CURSOS ONLINE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GAMA EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PARA EMPRESAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTATO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTEUDO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Digite o seu Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" required>
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Digite a sua Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Example file input</label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <!-- inserção de campos em bootstrap-->
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">Estados</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>SP</option>
+                              <option>BA</option>
+                              <option>RJ</option>
+                              <option>PE</option>
+                              <option>AM</option>
+                              <option>RS</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">CEP</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+            
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form></div>
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                    
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+</body>
+
+</html>
+==========================================
+
+
+
+Link´s
+======
+
+
+Na página bootstrap_form.html
+===========================
+insira o link na imagem do logo gama
+<a href="../html/bootstrap.html"><img src="../imagens/logo.png" width="100%"></a>
+
+
+Na página bootstrap.html
+===========================
+insira o link na opção contato
+<a href="../html/bootstrap_form.html">CONTATO</a>
+
+
+
+Criando uma página bootstrap com: Banner, Group Cards
+============================================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama - BootStrap</title>
+
+
+    <!-- Fazendo a chamada de uma biblioteca local do CSS -->
+    <!--<link rel="stylesheet" href="../css/estilos.css">-->
+
+    <!-- Chamada da biblioteca do BootStrap - CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Chamada da biblioteca do Bootstrap - JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+        <div class="container">
+            <!-- inserimos o menu-->
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-sm-3 div1"><img src="../imagens/logo.png" width="100%"></div>
+                <div class="col-lg-5 col-md-3 col-sm-3 div2">PRODUTOS</div>
+                <div class="col-lg-2 col-md-2 col-sm-3 div3">LINK</div>
+                <div class="col-lg-2 col-md-2 col-sm-3 div4">CONTATO</div>
+            </div>
+            <!-- inserimos o componente bootstrap do banner -->
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../imagens/paisagem1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagens/paisagem2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagens/paisagem3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <!-- chamada do componente card group-->
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">
+                      <img src="../imagens/curso1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Curso de HTML</h5>
+                        <p class="card-text">HTML é uma das linguagens que utilizamos para desenvolver websites. O acrônimo HTML vem do inglês e significa Hypertext Markup Language ou em português Linguagem de Marcação de Hipertexto. O HTML é a liguagem base da internet.</p>
+                        <p class="card-text"><small class="text-muted">Curso para o mês de Janeiro</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="../imagens/curso2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Curso de XML</h5>
+                        <p class="card-text">O XML, sigla para eXtensible Markup Language, é um tipo de linguagem de marcação que define regras para codificar diferentes documentos. É muito utilizado para a criação de Notas Fiscais Eletrônicas, também chamadas de NF-e, por armazená-las e ainda garantir uma assinatura digital.</p>
+                        <p class="card-text"><small class="text-muted">Curso para o mês de Janeiro</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="../imagens/curso3.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Curso de CSS</h5>
+                        <p class="card-text">O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML)</p>
+                        <p class="card-text"><small class="text-muted">Curso para o mês de Janeiro</small></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- divisão da página-->
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col mb-4">
+                      <div class="card">
+                        <video controls= autoplay="true" >
+                            <source src="../videos/gama.mp4" />
+            
+                        </video>
+                        <div class="card-body">
+                          <h5 class="card-title">Video Institucional</h5>
+                          <p class="card-text">Veja o vídeo institucional do grupo Gama Academy falando sobre o uso da palavra NÃO</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4">
+                      <div class="card">
+                        <img src="../imagens/LOGICA.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Curso de Lógica com Visual G</h5>
+                          <p class="card-text">A palavra lógica pode denotar tanto um conjunto de regras racionais para a obtenção de um conhecimento quanto a área da filosofia que estuda a validade formal das proposições linguísticas e matemáticas</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+
+
+
+Biblioteca estilos.css
+===================
+
+.container{
+    border:3px solid brown;
+    width: 500px;
+}
+
+.div1{
+    background-color: yellow;
+}
+
+.div2{
+background-color: rgb(88, 88, 243);
+}
+
+.div3{
+    background-color: green;
+}
+
+.div4{
+    background-color: red;
+}
+
+.campo_nome{
+    background-color: rgb(180, 184, 180);
+    color:yellow;
+    position: absolute;
+    left:85px;
+    width: 260px;
+
+}
+
+.campo_escolha{
+    background-color: rgb(180, 184, 180);
+    color:yellow;
+    position: absolute;
+     width: 150px;
+}
+.campo_data{
+    background-color: rgb(180, 184, 180);
+    color:yellow;
+    position: absolute;
+
+}
+
+.campo_email{
+    position: absolute;
+    left:85px;
+    width: 280px;
+}
+
+.campo_senha{
+    position: absolute;
+    left:340px;
+    width: 50px;
+}
+
+
+#formulario_contato{
+    background-color: rgb(169, 202, 169);
+    color:rgb(15, 8, 78);
+    font-size:14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+
+p{
+    color:blue;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    text-align: left;
+}
+
+body{
+    background-color: rgb(208, 211, 214);
+}
+.menu{
+    color:rgb(15, 8, 78);
+    font-size:14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.lista{
+    color:rgb(64, 5, 70);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*label{
+    color:rgb(15, 8, 78);
+    font-size:14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}*/
+
+legend{
+    color:rgb(5, 59, 5);
+    font-size:14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+
+Fazendo a chamada de uma biblioteca de CSS 
+=======================================
+
+        <link rel="stylesheet" href="../css/estilos.css">
+
+
+Página de contato.html completa
+=========================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+
+
+</head>
+
+<body>
+    <table border="0" width="100%" cellpadding="2">
+        <tr>
+            <td><a href="../html/index.html"><img src="../imagens/logo.png"></a></td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">CURSOS ONLINE</td>
+            <td align="right">GAMA EXPERIENCE</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEÚDO</td>
+        </tr>
+    </table>
+
+<br>
+<form id="formulario_contato" method="POST">
+<fieldset>
+    <legend><b>Para fazer os nossos cursos, preencha o formulário abaixo</b></legend><br>
+    <label>Nome:</label><input type="text" name="nome" required><br><br>
+<label>Email:</label><input type="email" name="email" required>
+<label>Telefone:</label><input type="tel" name="telefone" required>
+<label>Senha:</label><input type="password" name="senha" required><br><br>
+<label>Genero:</label>
+<input type="radio" name="opcao" value="Feminino"/> Feminino
+<input type="radio" name="opcao" value="Masculino"/>Masculino
+<input type="radio" name="opcao" value="Não responder"/>Não Responder <br><br>
+<label>Data do Curso:</label><input type="date" name="data_curso"><br><br>
+<label>Escolha o curso que deseja cursar:</label>
+<select required>
+    <option value=""></option>
+    <option value="CSS">CSS</option>
+    <option value="HTML">HTML</option>
+    <option value="JS">JS</option>
+    <option value="XML">XML</option>
+</select><br><br>
+<label>Escolha o perído que deseja cursar:</label>
+<input type="checkbox"  name="opcao" value="manhã"> Manhã
+<input type="checkbox"  name="opcao" value="tarde"> Tarde
+<input type="checkbox"  name="opcao" value="noite"> Noite<br><br>
+<label>Mensagem</label><br>
+<textarea name="mensagem" cols="35" rows="4"></textarea><br><br>
+<label>Anexar comprovante de residência</label><br><input type="file" name="arquivo"><br><br>
+
+<input type="submit" value="Enviar">
+
+
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+Criando formulários com Check Button
+==============================
+<input type="checkbox"  name="OPCAO" value="manhã"> Manhã
+<input type="checkbox"  name="OPCAO" value="tarde"> Tarde
+<input type="checkbox"  name="OPCAO" value="noite"> Noite<br><br>
+
+
+Criando formulários com Radio Box
+============================
+<input type="radio" name="opcao" value="sim"/> Sim<br />
+<input type="radio" name="opcao" value="nao"/> Não<br />
+<input type="radio" name="opcao" value="talvez"/> Talvez<br />
+<input type="radio" name="opcao" value="quem_sabe"/> Quem sabe 
+
+
+Página de Contato.html
+===============================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+
+
+</head>
+
+<body>
+    <table border="0" width="100%" cellpadding="2">
+        <tr>
+            <td><a href="../html/index.html"><img src="../imagens/logo.png"></a></td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">CURSOS ONLINE</td>
+            <td align="right">GAMA EXPERIENCE</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEÚDO</td>
+        </tr>
+    </table>
+
+<br>
+<form id="formulario_contato" method="POST">
+<label>Nome:</label><input type="text" name="nome" required><br><br>
+<label>Email:</label><input type="email" name="email" required><br><br>
+<label>Senha:</label><input type="password" name="senha" required><br><br>
+<label>Genero:</label>
+<input type="radio" name="opcao" value="Feminino"/> Feminino
+<input type="radio" name="opcao" value="Masculino"/>Masculino
+<input type="radio" name="opcao" value="Não responder"/>Não Responder <br><br>
+<label>Data do Curso:</label><input type="date" name="data_curso"><br><br>
+<label>Escolha o curso que deseja cursar:</label>
+<select required>
+    <option value=""></option>
+    <option value="CSS">CSS</option>
+    <option value="HTML">HTML</option>
+    <option value="JS">JS</option>
+    <option value="XML">XML</option>
+</select><br><br>
+
+
+<input type="submit" value="Enviar">
+
+
+
+</form>
+</body>
+</html>
+
+
+
+Inserindo vídeos em uma página HTML5
+===============================
+<video controls= autoplay="true" width="400" height="300">
+	<source src="videos/A.mp4" />
+	<source src="videos/A.wmv" />
+	<source src="videos/A.avi" />
+	<source src="videos/A.mpg" />
+	<p>Não suporta o vídeo</p>
+</video>
+
+
+
+Criando atributos em uma tabela no html5
+================================
+<table border="1" width="100%" cellpadding="10" cellspacing="5">
+
+Página index.html
+==============================
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy</title>
+
+
+</head>
+
+<body>
+    <!-- Tipos de Títulos em HTML5
+    <h1>SEJA BEM VINDO A NOSSA SUUUUUPER PÁGINA</h1>
+    <h2>SEJA BEM VINDO A NOSSA SUUUUUPER PÁGINA</h2>
+    <h3>SEJA BEM VINDO A NOSSA SUUUUUPER PÁGINA</h3>
+    <h4>SEJA BEM VINDO A NOSSA SUUUUUPER PÁGINA</h4>
+    <h5>SEJA BEM VINDO A NOSSA SUUUUUPER PÁGINA</h5>
+    <h6>SEJA BEM VINDO A NOSSA SUUUUUPER PÁGINA</h6> -->
+    <!-- Tabela para o menu-->
+    <table border="0" width="100%" cellpadding="2">
+        <tr>
+            <td><img src="../imagens/logo.png"></td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">CURSOS ONLINE</td>
+            <td align="right">GAMA EXPERIENCE</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEÚDO</td>
+        </tr>
+    </table>
+    <!-- Tabela para o conteúdo da página-->
+    <table border="0" width="100%" cellpadding="10" cellspacing="5">
+        <tr>
+            <td><img src="../imagens/figura1.png"></td>
+            <td><p>As escolas tradicionais trabalham com metodologias que
+                não<br> conseguem suprir as novas demandas do mundo. Preparam<br>
+                profissionais que não são capazes de assumir vagas de emprego<br>
+                no mercado atual e, dificilmente, lidar com os avanços<br> tecnológicos.
+                Não falam sobre soft skills, habilidades altamente<br> requisitadas.
+                E não abordam a importância da<br> multidisciplinaridade.</p>
+            <p>A Gama Academy forma profissionais com quatro características<br> fundamentais:</p>
+        
+            <!-- Criação da lista de opções em HTML -->
+            <!-- <ul type="circle">
+                <li>Vontade de Aprender e Ensinar;</li>
+                <li>Soft Skills;</li>
+                <li>Mindset Empreendedor;</li>
+                <li> Inovação Criativa.</li>
+        
+            </ul> -->
+        
+            <ul type="square">
+                <li>Vontade de Aprender e Ensinar;</li>
+                <li>Soft Skills;</li>
+                <li>Mindset Empreendedor;</li>
+                <li> Inovação Criativa.</li>
+        
+            </ul>
+            <h3>VÍDEO INSTITUCIONAL</h3>
+            <video controls= autoplay="true" width="400" height="300" >
+                <source src="../videos/gama.mp4" />
+
+            </video>
+        
+        </td>
+        </tr>
+    </table>
+
+    
+
+    
+
+    <!-- Forma de se criar listas com Letras ou Números
+    <ol type="1">
+        <li>Vontade de Aprender e Ensinar;</li>
+        <li>Soft Skills;</li>
+        <li>Mindset Empreendedor;</li>
+        <li> Inovação Criativa.</li>
+
+    </ol> -->
+
+</body>
+
+</html>

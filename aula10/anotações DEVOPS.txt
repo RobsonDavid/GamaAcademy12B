@@ -1,0 +1,59 @@
+https://wordpad.cc/turma12b
+
+
+
+https://github.com/Didox/kitutes-donate-treinamento-itau
+https://github.com/Didox/validar-cpf-back-spring-boot
+https://github.com/Didox/validar-cpf-front-js-vanilla
+
+
+> git clone git@github.com:Didoxvalidar-cpf-back-spring-boot.git
+
+https://github.com/RobsonDavid/itau-turma12B/blob/main/index.php
+
+https://dashboard.heroku.com/apps/deploy-php-robson/activity
+
+https://github.com/RobsonDavid/itau-turma12B/compare/5db64dc0...5cbc87f5
+
+https://deploy-php-robson.herokuapp.com/
+
+
+
+
+background-image
+
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fst2.depositphotos.com%2F4687049%2F6972%2Fi%2F600%2Fdepositphotos_69727173-stock-photo-brazilian-sweet-brigadeiro.jpg&imgrefurl=https%3A%2F%2Fbr.depositphotos.com%2Fstock-photos%2Fbrigadeiro.html&tbnid=lx5hx3WZUGTSJM&vet=12ahUKEwjOyKP4ic7tAhVvJbkGHZUuAYIQMygIegUIARClAQ..i&docid=dX1B5y6Occlq3M&w=600&h=400&q=banco%20de%20imagem%20gratuito%20brigadeiro&ved=2ahUKEwjOyKP4ic7tAhVvJbkGHZUuAYIQMygIegUIARClAQ
+
+http://localhost:3000/
+
+npm start -> iniciar servidor (cai toda hora)
+
+heroku --version
+heroku login -i
+
+ https://php-turma-12-robsondavid.herokuapp.com
+
+
+http://localhost:8080/validacpf?cpf=17130827807
+{"status": "valido"}
+
+http://localhost:8080/validacpf?cpf=
+{"status": "invalido"}
+
+
+ git init
+ git add  .
+ heroku create java-turma-12b-robsondavid2
+Creating ⬢ java-turma-12b-robsondavid2... done
+https://java-turma-12b-robsondavid2.herokuapp.com/ | https://git.heroku.com/java-turma-12b-robsondavid2.git
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\aula10\JAVA\validar-cpf-back-spring-boot> git push heroku master
+...
+
+https://java-turma-12b-robsondavid2.herokuapp.com/validacpf?cpf=17130827807
+
+https://java-turma-12b-robsondavid3.herokuapp.com
+
+
+http://localhost:8080/
+
+http://www.torneseumprogramador.com.br/aula?id=JiyKMqVfP1M&aula=20&tipo=back-end&professor=Danilo

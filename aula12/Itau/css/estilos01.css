@@ -1,0 +1,23 @@
+
+            <style>
+                p {
+                    color: rgb(37, 56, 37);
+                    font: 14px;
+                    font-family:  Helvetica;
+                }
+                body{
+                    background-color: rgb(124, 156, 245);
+                }
+                .menu {
+                    color:rgb(2, 46, 2);
+                    font-size: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+                .lista {
+                    color: rgb(58, 148, 58);
+                    font-size: medium;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+            </style>

@@ -1,0 +1,178 @@
+ - não precisa publicar em site Heroku
+ - dividir tarefas dentro do grupo (2 partes - Front / Back)
+ - 1a parte - fazer páginas e BD e processamento
+ - 2a parte - liberou Back, faz a integração com Front
+ - repositório no Git (clone, faz execução)
+ - manter horários 11 13 16
+ - 10 min antes intervalos - checkpoint (todos andando juntos)
+
+Wallace Queixas
+Bruno Moreira
+Diogo Pereira
+Robson David
+
+página 3 partes
+>> usuário
+imagen = guardar link (http ou pasta projeto) da foto e img= 
+bootstrap
+mídia object Nome (Racf)
+>> combo
+>>  tabela
+
+JPA - não usar SP ou View... independência!
+
+nativo - não tem correspndência com modelo .. tratar String
+fazer não nativo e criar DTO
+
+ou 
+
+trazer tudo all
+e na página faz um for e conta
+
+
+https://github.com/wqueixas/pj-java-li
+===== https://github.com/RobsonDavid/java-li-fron.git
+
+https://github.com/wqueixas/java-li-fron
+===== https://github.com/RobsonDavid/pj-java-li.git
+
+https://github.com/RobsonDavid/pj-java-li
+
+https://wordpad.cc/emersonpaduan
+//EXEMPLO SCRIPT TABELA USUÁRIO
+
+
+CREATE TABLE `tbl_usuario` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) NOT NULL,
+  `linkfoto` varchar(200) DEFAULT NULL,
+  `nome` varchar(100) NOT NULL,
+  `racf` varchar(7) NOT NULL,
+  `senha` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UK_email_usuario` (`email`),
+  UNIQUE KEY `UK_racf_usuario` (`racf`)
+);
+
+insert into tbl_usuario values (null, 'emerson@paduan.pro.br', 'https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg', 'Emerson Paduan', '12345', '1234');
+
+=====================
+
+//MODELO PARA FAZER A CONSULTA AGRUPADA
+
+import lombok.Getter;
+
+@Getter
+public class ContagemStatus {
+    private String agente;
+    private int status;
+    private long count;
+
+    public ContagemStatus(String agente, int status, long count) {
+        this.agente = agente;
+        this.status = status;
+        this.count = count;
+    }
+
+}
+
+
+//CONSULTA GRAUPADA NA TRANSAÇÃO
+
+@Query("SELECT new br.paduan.projFinal.dto.ContagemStatus(t.agente.nomeAgente, status, COUNT(t.status)) FROM Transacao AS t WHERE t.agente.idAgente = ?1 GROUP BY t.agente.nomeAgente, t.status ORDER By status")
+List<ContagemStatus> countStatusByAgent(int idAgente);
+
+
+// CONSULTA NO AGENTE FINANCEIRO
+
+public List<AgFinanceiro> findTop10ByOrderByVolumeTransacionalDesc();
+
+
+
+http://localhost:8081/agente/all
+*** trocar POST por GET
+  "timestamp": "2020-12-17T21:17:23.025+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+
+http://localhost:8081/user/all
+*** trocar POST por GET
+   "timestamp": "2020-12-17T21:17:02.433+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+
+http://localhost:8081/user/login
+{
+    "racf" : "reduard", "email" : "ww", "password" : "ab12"
+}
+{
+    "racf" : "reduaNrd", "email" : "robson.david@itau-unibanco.com.br", "password" : "ab12"
+}
+
+{
+    "name": "Robson David",
+    "email": "robson.david@itau-unibanco.com.br",
+    "racf": "reduard",
+    "foto": "/img/reduard.jpeg"
+}
+
+{
+    "racf" : "reduaNrd", "email" : "robson.david@itau-unibanco.com", "password" : "ab12"
+}
+404Not Found
+16 ms
+219 B
+
+
+
+>>>>>>
+>>>>>>>>
+>>>>>>>>>>>
+
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SpringProjectV2/reduard/src/main/java/br/reduard/dao/TransacaoDAO.java
+        modified:   mySQLProject/Script SQL 01.sql
+        modified:   mySQLProject/Script SQL 02.sql
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mySQLProject/Script SQL 04.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject> git add .
+
+
+warning: LF will be replaced by CRLF in mySQLProject/Script SQL 01.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mySQLProject/Script SQL 02.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mySQLProject/Script SQL 04.sql.
+The file will have its original line endings in your working directory
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject> git comit -m "nova versao funcionando"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SpringProjectV2/reduard/src/main/java/br/reduard/dao/TransacaoDAO.java
+        modified:   mySQLProject/Script SQL 01.sql
+        modified:   mySQLProject/Script SQL 02.sql
+        new file:   mySQLProject/Script SQL 04.sql
+
+
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject> git branch                                           
+* main
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject> git push origin main                                 
+Everything up-to-date
+PS C:\Users\003869674\Desktop\Gama Academy Turma 12B RB\myProject>   

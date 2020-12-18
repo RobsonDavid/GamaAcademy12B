@@ -1,0 +1,8 @@
+
+http://localhost:8080/start/hello
+
+
+https://wordpad.cc/emersonpaduan
+
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.at-query

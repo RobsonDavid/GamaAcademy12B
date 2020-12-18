@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppFuncionario<aula06_d12294e4>",
+            "request": "launch",
+            "mainClass": "exemplos.exemplo01.AppFuncionario",
+            "projectName": "aula06_d12294e4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppJogo<aula06_d12294e4>",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio01.AppJogo",
+            "projectName": "aula06_d12294e4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppSchool<aula06_d12294e4>",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio02.AppSchool",
+            "projectName": "aula06_d12294e4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppConta<aula06_d12294e4>",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio03.AppConta",
+            "projectName": "aula06_d12294e4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppConta2<aula06_d12294e4>",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio03.AppConta2",
+            "projectName": "aula06_d12294e4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppConta3<aula06_d12294e4>",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio03.AppConta3",
+            "projectName": "aula06_d12294e4"
+        }
+    ]
+}
